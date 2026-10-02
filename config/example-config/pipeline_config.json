@@ -1,0 +1,36 @@
+{
+    "environment": "development",
+    "schedule": {
+        "frequency": "Daily",
+        "time_utc": "02:00:00",
+        "time_zone": "UTC",
+        "retry_policy": {
+            "count": 3,
+            "interval_in_seconds": 300
+        }
+    },
+    "storage": {
+        "raw_container": "raw-transactions",
+        "curated_container": "curated-transactions",
+        "archive_container": "archive-transactions",
+        "quarantine_container": "quarantine-transactions",
+        "file_naming_convention": "daily_transactions_YYYYMMDD.csv"
+    },
+    "database": {
+        "schema_staging": "stg",
+        "schema_core": "edw",
+        "schema_operations": "ops",
+        "staging_table": "daily_sales_transactions",
+        "fact_table": "fact_sales"
+    },
+    "data_quality": {
+        "strict_mode": true,
+        "max_tolerated_error_percentage": 5.0,
+        "supported_transaction_statuses": [
+            "Completed",
+            "Cancelled",
+            "Refunded",
+            "Failed"
+        ]
+    }
+}

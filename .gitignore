@@ -1,0 +1,41 @@
+# Environment Variables & Secrets
+.env
+*.env
+*.secrets
+secrets.json
+credentials.json
+local.settings.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter / Databricks local artifacts
+.ipynb_checkpoints/
+*.spark_debug
+dbfs/
+
+# IDE / Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary Files
+*.log
+logs/
+temp/
+scratch/
+output/

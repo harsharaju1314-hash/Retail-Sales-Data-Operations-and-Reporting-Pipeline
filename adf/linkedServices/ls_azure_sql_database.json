@@ -1,0 +1,31 @@
+{
+    "name": "ls_azure_sql_database",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "description": "Linked service to Azure SQL Database retail data warehouse",
+        "annotations": [],
+        "type": "AzureSqlDatabase",
+        "typeProperties": {
+            "connectionString": "Server=tcp:@{linkedService().ServerName}.database.windows.net,1433;Database=@{linkedService().DatabaseName};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+            "userName": "sqladminuser",
+            "password": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "ls_azure_key_vault",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": "sql-admin-password"
+            }
+        },
+        "parameters": {
+            "ServerName": {
+                "type": "string",
+                "defaultValue": "sql-retail-reporting-dev"
+            },
+            "DatabaseName": {
+                "type": "string",
+                "defaultValue": "sqldb-retail-dw"
+            }
+        }
+    }
+}

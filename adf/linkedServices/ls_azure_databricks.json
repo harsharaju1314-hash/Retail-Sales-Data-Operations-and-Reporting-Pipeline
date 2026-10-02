@@ -1,0 +1,21 @@
+{
+    "name": "ls_azure_databricks",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "description": "Linked service to Azure Databricks cluster for running PySpark data cleaning notebooks",
+        "annotations": [],
+        "type": "AzureDatabricks",
+        "typeProperties": {
+            "domain": "https://adb-0000000000000000.0.azuredatabricks.net",
+            "accessToken": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "ls_azure_key_vault",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": "databricks-token"
+            },
+            "existingClusterId": "0000-000000-xxxxxx"
+        }
+    }
+}

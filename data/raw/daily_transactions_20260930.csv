@@ -1,0 +1,61 @@
+transaction_id,transaction_date,store_id,store_name,region,product_id,product_name,category,quantity,unit_price,discount,payment_method,transaction_status
+TXN-20260930-10119,2026-09-30,STR-107,London Oxford Street,Europe - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,1,189.99,19.00,Credit Card,Completed
+TXN-20260930-10120,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,1,29.99,3.00,Mobile Wallet,Completed
+TXN-20260930-10121,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,6,99.99,0.00,Gift Card,Completed
+TXN-20260930-10122,2026-09-30,STR-106,Munich City Center,Europe - Central,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,4,149.99,30.00,Cash,Completed
+TXN-20260930-10123,2026-09-30,STR-106,Munich City Center,Europe - Central,PRD-008,Breathable Athletic Running Shoes,Footwear,6,89.99,0.00,Debit Card,Refunded
+TXN-20260930-10124,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,5,24.99,12.49,Cash,Failed
+TXN-20260930-10125,2026-09-30,STR-107,London Oxford Street,Europe - West,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,3,29.99,0.00,Credit Card,Completed
+TXN-20260930-10126,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-008,Breathable Athletic Running Shoes,Footwear,2,89.99,9.00,Mobile Wallet,Refunded
+TXN-20260930-10127,2026-09-30,STR-101,Downtown Manhattan Flagship,North America - East,PRD-008,Breathable Athletic Running Shoes,Footwear,3,89.99,0.00,Debit Card,Failed
+TXN-20260930-10128,2026-09-30,STR-106,Munich City Center,Europe - Central,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,3,24.99,0.00,Gift Card,Completed
+TXN-20260930-10129,2026-09-30,STR-101,Downtown Manhattan Flagship,North America - East,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,2,79.99,0.00,Cash,Completed
+TXN-20260930-10130,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,2,79.99,24.00,Cash,Failed
+TXN-20260930-10131,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,1,149.99,0.00,Cash,Completed
+TXN-20260930-10132,2026-09-30,STR-104,San Francisco Union Sq,North America - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,6,24.99,14.99,Cash,Cancelled
+TXN-20260930-10133,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,3,79.99,12.00,Mobile Wallet,Cancelled
+TXN-20260930-10134,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,3,24.99,0.00,Credit Card,Completed
+TXN-20260930-10135,2026-09-30,STR-104,San Francisco Union Sq,North America - West,PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,1,19.99,3.00,Debit Card,Completed
+TXN-20260930-10136,2026-09-30,STR-104,San Francisco Union Sq,North America - West,PRD-008,Breathable Athletic Running Shoes,Footwear,3,89.99,40.50,Credit Card,Completed
+TXN-20260930-10137,2026-09-30,STR-104,San Francisco Union Sq,North America - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,2,24.99,0.00,Mobile Wallet,Completed
+TXN-20260930-10138,2026-09-30,STR-101,Downtown Manhattan Flagship,North America - East,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,2,79.99,0.00,Credit Card,Completed
+TXN-20260930-10139,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,6,24.99,0.00,Credit Card,Failed
+TXN-20260930-10140,2026-09-30,STR-101,Downtown Manhattan Flagship,North America - East,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,3,29.99,4.50,Cash,Failed
+TXN-20260930-10141,2026-09-30,STR-106,Munich City Center,Europe - Central,PRD-003,4K Ultra-HD Action Camera Pro,Electronics,1,229.99,0.00,Credit Card,Failed
+TXN-20260930-10142,2026-09-30,STR-102,Boston Back Bay Store,North America - East,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,4,99.99,0.00,Debit Card,Completed
+TXN-20260930-10143,2026-09-30,STR-103,Seattle Downtown Outlet,North America - West,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,3,29.99,0.00,Credit Card,Completed
+TXN-20260930-10144,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,5,99.99,50.00,Gift Card,Completed
+TXN-20260930-10145,2026-09-30,STR-107,London Oxford Street,Europe - West,PRD-008,Breathable Athletic Running Shoes,Footwear,4,89.99,0.00,Mobile Wallet,Refunded
+TXN-20260930-10146,2026-09-30,STR-110,Sydney George St Store,Asia Pacific,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,1,29.99,3.00,Debit Card,Completed
+TXN-20260930-10147,2026-09-30,STR-104,San Francisco Union Sq,North America - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,6,24.99,0.00,Debit Card,Completed
+TXN-20260930-10148,2026-09-30,STR-103,Seattle Downtown Outlet,North America - West,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,1,79.99,0.00,Cash,Completed
+TXN-20260930-10149,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,4,29.99,0.00,Debit Card,Completed
+TXN-20260930-10150,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,6,24.99,7.50,Debit Card,Completed
+TXN-20260930-10151,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,6,29.99,0.00,Credit Card,Refunded
+TXN-20260930-10152,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-004,Ergonomic Mesh Office Chair,Home & Office,6,189.99,0.00,Debit Card,Completed
+TXN-20260930-10153,2026-09-30,STR-102,Boston Back Bay Store,North America - East,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,2,149.99,0.00,Cash,Completed
+TXN-20260930-10154,2026-09-30,STR-102,Boston Back Bay Store,North America - East,PRD-008,Breathable Athletic Running Shoes,Footwear,6,89.99,0.00,Mobile Wallet,Refunded
+TXN-20260930-10155,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,4,79.99,16.00,Gift Card,Completed
+TXN-20260930-10156,2026-09-30,STR-101,Downtown Manhattan Flagship,North America - East,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,6,99.99,0.00,Credit Card,Completed
+TXN-20260930-10157,2026-09-30,STR-102,Boston Back Bay Store,North America - East,PRD-004,Ergonomic Mesh Office Chair,Home & Office,6,189.99,113.99,Mobile Wallet,Completed
+TXN-20260930-10158,2026-09-30,STR-110,Sydney George St Store,Asia Pacific,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,2,149.99,15.00,Mobile Wallet,Failed
+TXN-20260930-10159,2026-09-30,STR-103,Seattle Downtown Outlet,North America - West,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,4,29.99,17.99,Credit Card,Failed
+TXN-20260930-10160,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,4,19.99,0.00,Credit Card,Cancelled
+TXN-20260930-10161,2026-09-30,STR-103,Seattle Downtown Outlet,North America - West,PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,4,19.99,11.99,Mobile Wallet,Failed
+TXN-20260930-10162,2026-09-30,STR-107,London Oxford Street,Europe - West,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,1,79.99,4.00,Mobile Wallet,Completed
+TXN-20260930-10163,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,1,19.99,1.00,Gift Card,Completed
+TXN-20260930-10164,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,1,99.99,0.00,Gift Card,Cancelled
+TXN-20260930-10165,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-008,Breathable Athletic Running Shoes,Footwear,1,89.99,0.00,Gift Card,Completed
+TXN-20260930-10166,2026-09-30,STR-103,Seattle Downtown Outlet,North America - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,4,24.99,14.99,Credit Card,Failed
+TXN-20260930-10167,2026-09-30,STR-101,Downtown Manhattan Flagship,North America - East,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,2,29.99,9.00,Mobile Wallet,Completed
+TXN-20260930-10168,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,5,149.99,37.50,Debit Card,Completed
+TXN-20260930-10169,2026-09-30,STR-102,Boston Back Bay Store,North America - East,PRD-008,Breathable Athletic Running Shoes,Footwear,1,89.99,13.50,Cash,Completed
+TXN-20260930-10170,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,6,79.99,0.00,Cash,Refunded
+TXN-20260930-10171,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,4,189.99,76.00,Cash,Completed
+TXN-20260930-10172,2026-09-30,STR-104,San Francisco Union Sq,North America - West,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,5,29.99,22.49,Credit Card,Completed
+TXN-20260930-10173,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,3,99.99,30.00,Credit Card,Completed
+TXN-20260930-10174,2026-09-30,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,5,24.99,12.49,Debit Card,Failed
+TXN-20260930-10175,2026-09-30,STR-108,Manchester Arndale,Europe - West,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,4,79.99,0.00,Gift Card,Cancelled
+TXN-20260930-10121,2026-09-30,STR-109,Singapore Marina Mall,Asia Pacific,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,6,99.99,0.00,Gift Card,Completed
+TXN-20260930-10176,2026-09-30,STR-106,Munich City Center,Europe - Central,PRD-008,Breathable Athletic Running Shoes,Footwear,-1,89.99,0.00,Debit Card,Refunded
+TXN-20260930-10177,2026-09-30,STR-107,London Oxford Street,Europe - West,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,3,29.99,,Credit Card,Completed

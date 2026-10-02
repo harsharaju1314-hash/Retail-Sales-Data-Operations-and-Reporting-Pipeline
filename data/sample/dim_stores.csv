@@ -1,0 +1,11 @@
+store_id,store_name,region_id,city,store_type
+STR-101,Downtown Manhattan Flagship,1,New York,Flagship
+STR-102,Boston Back Bay Store,1,Boston,Standard
+STR-103,Seattle Downtown Outlet,2,Seattle,Outlet
+STR-104,San Francisco Union Sq,2,San Francisco,Flagship
+STR-105,Berlin Alexanderplatz,3,Berlin,Standard
+STR-106,Munich City Center,3,Munich,Standard
+STR-107,London Oxford Street,4,London,Flagship
+STR-108,Manchester Arndale,4,Manchester,Standard
+STR-109,Singapore Marina Mall,5,Singapore,Flagship
+STR-110,Sydney George St Store,5,Sydney,Standard

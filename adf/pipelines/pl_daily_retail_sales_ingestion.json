@@ -1,0 +1,252 @@
+{
+    "name": "pl_daily_retail_sales_ingestion",
+    "properties": {
+        "description": "Orchestrates end-to-end daily retail data pipeline: raw file validation, Databricks cleaning/transformation, quality validation, staging load, and star-schema fact upsert.",
+        "parameters": {
+            "trigger_date": {
+                "type": "string",
+                "defaultValue": "2026-10-01"
+            },
+            "raw_container_name": {
+                "type": "string",
+                "defaultValue": "raw-transactions"
+            },
+            "curated_container_name": {
+                "type": "string",
+                "defaultValue": "curated-transactions"
+            }
+        },
+        "variables": {
+            "formatted_file_name": {
+                "type": "String"
+            },
+            "curated_directory_path": {
+                "type": "String"
+            }
+        },
+        "activities": [
+            {
+                "name": "Set_File_And_Directory_Variables",
+                "type": "SetVariable",
+                "dependsOn": [],
+                "userProperties": [],
+                "typeProperties": {
+                    "variableName": "formatted_file_name",
+                    "value": {
+                        "value": "@concat('daily_transactions_', replace(pipeline().parameters.trigger_date, '-', ''), '.csv')",
+                        "type": "Expression"
+                    }
+                }
+            },
+            {
+                "name": "Set_Curated_Path_Variable",
+                "type": "SetVariable",
+                "dependsOn": [
+                    {
+                        "activity": "Set_File_And_Directory_Variables",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "variableName": "curated_directory_path",
+                    "value": {
+                        "value": "@concat('date=', replace(pipeline().parameters.trigger_date, '-', ''))",
+                        "type": "Expression"
+                    }
+                }
+            },
+            {
+                "name": "Validation_CheckRawFileExists",
+                "type": "Validation",
+                "dependsOn": [
+                    {
+                        "activity": "Set_Curated_Path_Variable",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "dataset": {
+                        "referenceName": "ds_blob_raw_csv",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "ContainerName": {
+                                "value": "@pipeline().parameters.raw_container_name",
+                                "type": "Expression"
+                            },
+                            "FileName": {
+                                "value": "@variables('formatted_file_name')",
+                                "type": "Expression"
+                            }
+                        }
+                    },
+                    "timeout": "0.00:10:00",
+                    "sleep": 30,
+                    "minimumSize": 100
+                }
+            },
+            {
+                "name": "Databricks_Clean_And_Transform",
+                "type": "DatabricksNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "Validation_CheckRawFileExists",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/RetailDW/01_data_cleaning_and_transformation",
+                    "baseParameters": {
+                        "trigger_date": {
+                            "value": "@pipeline().parameters.trigger_date",
+                            "type": "Expression"
+                        },
+                        "source_storage_path": {
+                            "value": "@concat('/mnt/', pipeline().parameters.raw_container_name)",
+                            "type": "Expression"
+                        },
+                        "target_storage_path": {
+                            "value": "@concat('/mnt/', pipeline().parameters.curated_container_name)",
+                            "type": "Expression"
+                        }
+                    }
+                },
+                "linkedServiceName": {
+                    "referenceName": "ls_azure_databricks",
+                    "type": "LinkedServiceReference"
+                }
+            },
+            {
+                "name": "Databricks_Validate_Data_Quality",
+                "type": "DatabricksNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "Databricks_Clean_And_Transform",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/RetailDW/02_data_quality_validation",
+                    "baseParameters": {
+                        "trigger_date": {
+                            "value": "@pipeline().parameters.trigger_date",
+                            "type": "Expression"
+                        },
+                        "target_storage_path": {
+                            "value": "@concat('/mnt/', pipeline().parameters.curated_container_name)",
+                            "type": "Expression"
+                        }
+                    }
+                },
+                "linkedServiceName": {
+                    "referenceName": "ls_azure_databricks",
+                    "type": "LinkedServiceReference"
+                }
+            },
+            {
+                "name": "Copy_CuratedParquet_To_SqlStaging",
+                "type": "Copy",
+                "dependsOn": [
+                    {
+                        "activity": "Databricks_Validate_Data_Quality",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "ParquetSource",
+                        "storeSettings": {
+                            "type": "AzureBlobStorageReadSettings",
+                            "recursive": true,
+                            "wildcardFileName": "*.parquet"
+                        }
+                    },
+                    "sink": {
+                        "type": "AzureSqlSink",
+                        "writeBehavior": "insert",
+                        "preCopyScript": "TRUNCATE TABLE stg.daily_sales_transactions;",
+                        "tableOption": "autoCreate"
+                    },
+                    "enableStaging": false
+                },
+                "inputs": [
+                    {
+                        "referenceName": "ds_blob_curated_parquet",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "ContainerName": {
+                                "value": "@pipeline().parameters.curated_container_name",
+                                "type": "Expression"
+                            },
+                            "DirectoryPath": {
+                                "value": "@variables('curated_directory_path')",
+                                "type": "Expression"
+                            }
+                        }
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "ds_azuresql_sales_staging",
+                        "type": "DatasetReference"
+                    }
+                ]
+            },
+            {
+                "name": "Sql_Execute_LoadFactSales_Proc",
+                "type": "SqlServerStoredProcedure",
+                "dependsOn": [
+                    {
+                        "activity": "Copy_CuratedParquet_To_SqlStaging",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "storedProcedureName": "ops.usp_load_fact_sales",
+                    "storedProcedureParameters": {
+                        "trigger_date": {
+                            "value": {
+                                "value": "@pipeline().parameters.trigger_date",
+                                "type": "Expression"
+                            },
+                            "type": "Date"
+                        },
+                        "pipeline_run_id": {
+                            "value": {
+                                "value": "@pipeline().RunId",
+                                "type": "Expression"
+                            },
+                            "type": "String"
+                        }
+                    }
+                },
+                "linkedServiceName": {
+                    "referenceName": "ls_azure_sql_database",
+                    "type": "LinkedServiceReference"
+                }
+            }
+        ],
+        "annotations": [
+            "RetailDW",
+            "BatchIngestion",
+            "DataOperations"
+        ]
+    }
+}

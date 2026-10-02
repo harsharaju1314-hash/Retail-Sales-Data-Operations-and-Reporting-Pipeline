@@ -1,0 +1,53 @@
+transaction_id,transaction_date,store_id,store_name,region,product_id,product_name,category,quantity,unit_price,discount,payment_method,transaction_status
+TXN-20260929-10068,2026-09-29,STR-101,Downtown Manhattan Flagship,North America - East,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,3,24.99,0.00,Debit Card,Cancelled
+TXN-20260929-10069,2026-09-29,STR-104,San Francisco Union Sq,North America - West,PRD-002,Smart Fitness Tracker Band 5,Electronics,3,59.99,18.00,Gift Card,Refunded
+TXN-20260929-10070,2026-09-29,STR-103,Seattle Downtown Outlet,North America - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,2,189.99,0.00,Credit Card,Refunded
+TXN-20260929-10071,2026-09-29,STR-103,Seattle Downtown Outlet,North America - West,PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,4,19.99,11.99,Mobile Wallet,Completed
+TXN-20260929-10072,2026-09-29,STR-103,Seattle Downtown Outlet,North America - West,PRD-002,Smart Fitness Tracker Band 5,Electronics,4,59.99,0.00,Debit Card,Failed
+TXN-20260929-10073,2026-09-29,STR-104,San Francisco Union Sq,North America - West,PRD-008,Breathable Athletic Running Shoes,Footwear,3,89.99,0.00,Debit Card,Completed
+TXN-20260929-10074,2026-09-29,STR-101,Downtown Manhattan Flagship,North America - East,PRD-004,Ergonomic Mesh Office Chair,Home & Office,4,189.99,0.00,Credit Card,Completed
+TXN-20260929-10075,2026-09-29,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,6,19.99,11.99,Gift Card,Refunded
+TXN-20260929-10076,2026-09-29,STR-106,Munich City Center,Europe - Central,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,1,149.99,0.00,Gift Card,Completed
+TXN-20260929-10077,2026-09-29,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,1,149.99,15.00,Mobile Wallet,Refunded
+TXN-20260929-10078,2026-09-29,STR-106,Munich City Center,Europe - Central,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,5,99.99,50.00,Cash,Completed
+TXN-20260929-10079,2026-09-29,STR-110,Sydney George St Store,Asia Pacific,PRD-004,Ergonomic Mesh Office Chair,Home & Office,3,189.99,0.00,Credit Card,Refunded
+TXN-20260929-10080,2026-09-29,STR-109,Singapore Marina Mall,Asia Pacific,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,6,79.99,71.99,Mobile Wallet,Completed
+TXN-20260929-10081,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-002,Smart Fitness Tracker Band 5,Electronics,6,59.99,0.00,Credit Card,Cancelled
+TXN-20260929-10082,2026-09-29,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,3,79.99,36.00,Mobile Wallet,Refunded
+TXN-20260929-10083,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,5,24.99,0.00,Cash,Completed
+TXN-20260929-10084,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-003,4K Ultra-HD Action Camera Pro,Electronics,5,229.99,115.00,Cash,Completed
+TXN-20260929-10085,2026-09-29,STR-109,Singapore Marina Mall,Asia Pacific,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,3,149.99,0.00,Cash,Completed
+TXN-20260929-10086,2026-09-29,STR-110,Sydney George St Store,Asia Pacific,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,6,29.99,0.00,Cash,Failed
+TXN-20260929-10087,2026-09-29,STR-108,Manchester Arndale,Europe - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,5,189.99,47.50,Credit Card,Completed
+TXN-20260929-10088,2026-09-29,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,6,79.99,71.99,Credit Card,Cancelled
+TXN-20260929-10089,2026-09-29,STR-104,San Francisco Union Sq,North America - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,2,24.99,0.00,Credit Card,Completed
+TXN-20260929-10090,2026-09-29,STR-101,Downtown Manhattan Flagship,North America - East,PRD-004,Ergonomic Mesh Office Chair,Home & Office,4,189.99,76.00,Cash,Completed
+TXN-20260929-10091,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,2,29.99,9.00,Cash,Refunded
+TXN-20260929-10092,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,2,189.99,57.00,Credit Card,Completed
+TXN-20260929-10093,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,2,189.99,57.00,Credit Card,Failed
+TXN-20260929-10094,2026-09-29,STR-109,Singapore Marina Mall,Asia Pacific,PRD-004,Ergonomic Mesh Office Chair,Home & Office,1,189.99,9.50,Cash,Completed
+TXN-20260929-10095,2026-09-29,STR-109,Singapore Marina Mall,Asia Pacific,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,5,79.99,0.00,Gift Card,Failed
+TXN-20260929-10096,2026-09-29,STR-109,Singapore Marina Mall,Asia Pacific,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,5,99.99,25.00,Cash,Completed
+TXN-20260929-10097,2026-09-29,STR-108,Manchester Arndale,Europe - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,2,24.99,7.50,Gift Card,Completed
+TXN-20260929-10098,2026-09-29,STR-108,Manchester Arndale,Europe - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,3,189.99,28.50,Mobile Wallet,Completed
+TXN-20260929-10099,2026-09-29,STR-104,San Francisco Union Sq,North America - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,3,24.99,0.00,Debit Card,Completed
+TXN-20260929-10100,2026-09-29,STR-103,Seattle Downtown Outlet,North America - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,4,189.99,113.99,Debit Card,Completed
+TXN-20260929-10101,2026-09-29,STR-102,Boston Back Bay Store,North America - East,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,4,99.99,0.00,Cash,Failed
+TXN-20260929-10102,2026-09-29,STR-101,Downtown Manhattan Flagship,North America - East,PRD-004,Ergonomic Mesh Office Chair,Home & Office,4,189.99,38.00,Gift Card,Completed
+TXN-20260929-10103,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-008,Breathable Athletic Running Shoes,Footwear,1,89.99,0.00,Cash,Completed
+TXN-20260929-10104,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,6,79.99,71.99,Cash,Completed
+TXN-20260929-10105,2026-09-29,STR-104,San Francisco Union Sq,North America - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,4,24.99,5.00,Cash,Completed
+TXN-20260929-10106,2026-09-29,STR-106,Munich City Center,Europe - Central,PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,6,99.99,0.00,Debit Card,Failed
+TXN-20260929-10107,2026-09-29,STR-110,Sydney George St Store,Asia Pacific,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,1,79.99,4.00,Credit Card,Completed
+TXN-20260929-10108,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-003,4K Ultra-HD Action Camera Pro,Electronics,4,229.99,0.00,Mobile Wallet,Completed
+TXN-20260929-10109,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,2,19.99,2.00,Mobile Wallet,Cancelled
+TXN-20260929-10110,2026-09-29,STR-107,London Oxford Street,Europe - West,PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,4,24.99,0.00,Cash,Completed
+TXN-20260929-10111,2026-09-29,STR-101,Downtown Manhattan Flagship,North America - East,PRD-009,Compact Mechanical Gaming Keyboard,Electronics,1,79.99,0.00,Credit Card,Completed
+TXN-20260929-10112,2026-09-29,STR-101,Downtown Manhattan Flagship,North America - East,PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,2,149.99,0.00,Gift Card,Completed
+TXN-20260929-10113,2026-09-29,STR-103,Seattle Downtown Outlet,North America - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,2,189.99,19.00,Gift Card,Completed
+TXN-20260929-10114,2026-09-29,STR-104,San Francisco Union Sq,North America - West,PRD-008,Breathable Athletic Running Shoes,Footwear,6,89.99,0.00,Debit Card,Cancelled
+TXN-20260929-10115,2026-09-29,STR-110,Sydney George St Store,Asia Pacific,PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,6,29.99,26.99,Debit Card,Completed
+TXN-20260929-10116,2026-09-29,STR-105,Berlin Alexanderplatz,Europe - Central,PRD-002,Smart Fitness Tracker Band 5,Electronics,5,59.99,0.00,Gift Card,Completed
+TXN-20260929-10070,2026-09-29,STR-103,Seattle Downtown Outlet,North America - West,PRD-004,Ergonomic Mesh Office Chair,Home & Office,2,189.99,0.00,Credit Card,Refunded
+TXN-20260929-10117,2026-09-29,STR-103,Seattle Downtown Outlet,North America - West,PRD-002,Smart Fitness Tracker Band 5,Electronics,-1,59.99,0.00,Debit Card,Failed
+TXN-20260929-10118,2026-09-29,STR-101,Downtown Manhattan Flagship,North America - East,PRD-004,Ergonomic Mesh Office Chair,Home & Office,4,189.99,,Credit Card,Completed

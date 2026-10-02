@@ -1,0 +1,11 @@
+product_id,product_name,category,subcategory,unit_cost,base_price
+PRD-001,Ultra Wireless Noise-Cancelling Headphones,Electronics,Audio,85.0,149.99
+PRD-002,Smart Fitness Tracker Band 5,Electronics,Wearables,28.0,59.99
+PRD-003,4K Ultra-HD Action Camera Pro,Electronics,Cameras,120.0,229.99
+PRD-004,Ergonomic Mesh Office Chair,Home & Office,Furniture,95.0,189.99
+PRD-005,Stainless Steel Thermal Coffee Tumbler 20oz,Home & Office,Drinkware,8.5,24.99
+PRD-006,Organic Cotton Crewneck T-Shirt,Apparel,Men's Clothing,7.0,19.99
+PRD-007,Water-Resistant Trail Hiking Jacket,Apparel,Outerwear,45.0,99.99
+PRD-008,Breathable Athletic Running Shoes,Footwear,Sports Footwear,38.0,89.99
+PRD-009,Compact Mechanical Gaming Keyboard,Electronics,Computer Accessories,42.0,79.99
+PRD-010,Eco-Friendly Yoga Mat 6mm,Sports & Fitness,Fitness Accessories,12.0,29.99

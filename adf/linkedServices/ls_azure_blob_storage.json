@@ -1,0 +1,26 @@
+{
+    "name": "ls_azure_blob_storage",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "description": "Linked service to Azure Blob Storage / Data Lake Gen2 raw and curated containers",
+        "annotations": [],
+        "type": "AzureBlobStorage",
+        "typeProperties": {
+            "connectionString": "DefaultEndpointsProtocol=https;AccountName=@{linkedService().StorageAccountName};EndpointSuffix=core.windows.net;",
+            "accountKey": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "ls_azure_key_vault",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": "storage-account-key"
+            }
+        },
+        "parameters": {
+            "StorageAccountName": {
+                "type": "string",
+                "defaultValue": "stretaildatadev"
+            }
+        }
+    }
+}
